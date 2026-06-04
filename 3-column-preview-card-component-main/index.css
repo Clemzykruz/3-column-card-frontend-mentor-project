@@ -1,0 +1,84 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* PRIMARY COLORS */
+  --Gold-500: hsl(31, 77%, 52%);
+  --Cyan-800: hsl(184, 100%, 22%);
+  --Green-950: hsl(179, 100%, 13%);
+  /* NEUTRAL COLORS */
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Gray-100-background-headings-buttons: hsl(0, 0%, 95%);
+  /* FONT SIZE */
+  --fs: 15px;
+  --fw: 400;
+}
+.wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.car-container {
+  padding: 1.8rem;
+}
+.img {
+  max-width: 2.5rem;
+  display: block;
+  padding-bottom: 1.4rem;
+}
+h1 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+p {
+  line-height: 1, 2rem;
+  padding-bottom: 2rem;
+}
+button {
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+}
+.sedans {
+  background-color: var(--Gold-500);
+  color: var(--Transparent-white-paragraphs);
+  font-size: 0.8rem;
+}
+.sedans button {
+  color: var(--Gold-500);
+}
+.suvs {
+  background-color: var(--Cyan-800);
+  color: var(--Transparent-white-paragraphs);
+}
+.suvs button {
+  color: var(--Cyan-800);
+}
+.luxury {
+  background: var(--Green-950);
+  color: var(--Transparent-white-paragraphs);
+}
+.luxury button {
+  color: var(--Green-950);
+}
+@media (min-width: 500px) {
+  .wrapper {
+    max-width: 1000px;
+    flex-direction: row;
+  }
+  .sedans,
+  .suvs,
+  .luxury {
+    position: relative;
+  }
+  button{
+    position: absolute;
+    bottom: 1rem;
+  }
+}
